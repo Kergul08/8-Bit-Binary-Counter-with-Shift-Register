@@ -34,9 +34,9 @@ Inside the execution `loop()`:
 
 * The `shiftOut()` function streams the `LED1s` byte bit-by-bit into the shift register via `dataPin`, pulsed by the `clockPin` tracking clock cycles (Least Significant Bit first).
 
-The `latchPin` is pulled `HIGH`, transferring the bits to the physical output pins all at once to update the LEDs.
+* The `latchPin` is pulled `HIGH`, transferring the bits to the physical output pins all at once to update the LEDs.
 
-The byte increments by 1 every cycle and resets automatically when it overflows past `255`.
+* The byte increments by 1 every cycle and resets automatically when it overflows past `255`.
 
 ---
 ## [Comparison with 4-Bit Counter](https://github.com/Kergul08/4-Bit-Binary-Counter)
